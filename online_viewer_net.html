@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanskrit Syllabus Download</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#86A8E7,#91EAE4,#C3F0CA,#B5EAD7);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:90%;
+max-width:500px;
+padding:40px;
+border-radius:25px;
+text-align:center;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(20px);
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+color:white;
+animation:popup .8s;
+}
+
+@keyframes popup{
+from{
+transform:scale(.8);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+p{
+margin-bottom:30px;
+font-size:18px;
+}
+
+button{
+padding:18px 35px;
+font-size:20px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+background:white;
+color:#2196F3;
+font-weight:bold;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px white;
+}
+
+.footer{
+margin-top:30px;
+font-size:17px;
+opacity:.9;
+}
+
+.circle{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.18);
+animation:float 15s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) scale(0);
+}
+100%{
+transform:translateY(-120vh) scale(1);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="circle" style="width:120px;height:120px;left:10%;animation-duration:18s;"></div>
+<div class="circle" style="width:80px;height:80px;left:30%;animation-duration:15s;"></div>
+<div class="circle" style="width:150px;height:150px;left:70%;animation-duration:22s;"></div>
+<div class="circle" style="width:60px;height:60px;left:90%;animation-duration:12s;"></div>
+
+<div class="card">
+<h1>📖 Sanskrit Syllabus</h1>
+<p>Download the PDF with one click.</p>
+
+<a href="sanskrit syllabus class 9th (by Arshan).pdf" download>
+<button>⬇ Download PDF</button>
+</a>
+
+<div class="footer">
+❤️ Made by <b>Arshan</b>
+</div>
+</div>
+
+<audio id="music" autoplay loop>
+<source src="minecraft-theme-song-made-with-Voicemod.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music=document.getElementById("music");
+music.volume=1.0;
+
+// Try autoplay again after first user interaction
+document.addEventListener("click",()=>{
+music.play();
+});
+</script>
+
+</body>
+</html>
